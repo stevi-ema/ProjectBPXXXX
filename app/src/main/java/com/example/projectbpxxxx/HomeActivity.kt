@@ -12,10 +12,16 @@ class HomeActivity : AppCompatActivity() {
 
         //instance
         val btnMore:Button = findViewById(R.id.menu4)
+        val btnKid:Button = findViewById(R.id.menu1)
 
         //event button more click
         btnMore.setOnClickListener {
             val intent = Intent(this, AboutActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnKid.setOnClickListener {
+            val intent = Intent(this, BookKidActivity::class.java)
             startActivity(intent)
         }
     }
